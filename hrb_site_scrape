@@ -1,0 +1,15 @@
+[GET]weather_widget
+http://www.hrblock.com/gateway/services/tpf/meta/appmeta
+* Returns Contact ID
+
+http://www.hrblock.com/locator-service/officeservice/tpf/001/data/getOfficeDetailsByTaxID?oid=16569
+
+[POST]
+http://www.hrblock.com/gateway/services/tpf/taxpro/basicinfo-bm
+{"officeId":16569,"contactId":167861517}
+
+http://www.hrblock.com/gateway/services/tpf/appointment/available-slots
+{"numberOfSlots":50,"duration":"","clientRating":1,"earliestAppointment":true,"multiState":false,"appointmentServiceType":"OFFICE","spanishIndicator":false,"slotFilter":"TP","officeList":[16569],"employeeList":[[31281,107006,34575,34919,369358,246942,268990]],"appointmentStartDateTime":"2016-01-14T08:00:00","appointmentEndDateTime":"2016-01-14T22:00:00","contactId":167861517,"appointmentStartDateTimeUser":"2016-01-14T14:00:00","serviceType":1,"catpFlowType":"CATPNonBestMatch","employeeRole":1}
+
+http://www.hrblock.com/gateway/services/tpf/taxpro/details-officeid-empidlist
+{"officeId":16569,"contactId":167861517,"employeeList":[31281,107006,34575,34919,369358,246942]}
